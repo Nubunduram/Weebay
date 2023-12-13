@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "dev:scss": "sass --watch your/style.scss:dist/style.css",
+    "dev:scss": "sass --watch input.scss:output.css",
     "dev:server": "your-dev-server-command",
     "dev": "concurrently \"npm run dev:scss\" \"npm run dev:server\""
   },
