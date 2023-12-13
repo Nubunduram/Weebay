@@ -1,0 +1,1601 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* ACTUAL CSS */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header,
+main {
+  width: 80%;
+}
+
+/* NAV BAR */
+#logo-weebay {
+  max-width: 50%;
+}
+
+nav {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+header > nav > ul > li > a {
+  font-size: calc(0.25vw + 0.75rem);
+  font-weight: 600;
+  padding-right: calc(0.5vw + 0.75rem);
+}
+
+header > nav > ul > :last-child > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > nav > ul > :last-child > a > div {
+  font-size: 12px;
+  color: #fff;
+  background-color: #FE8476;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  border-radius: 100%;
+  text-align: center;
+}
+
+/* ONE PIECE SECTION */
+header > section {
+  margin-top: 2.5rem;
+  position: relative;
+  aspect-ratio: 1151/325;
+  overflow: hidden;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+#one-piece-video-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  margin-top: -28.3%;
+  z-index: -1;
+}
+
+#one-piece-video-background,
+#logo-one-piece {
+  width: 100%;
+}
+
+#one-piece-content-overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content {
+  max-width: 30%;
+}
+
+.content > p {
+  margin-top: 1rem;
+  font-size: calc(0.5vw + 0.5rem);
+  font-weight: 400;
+  line-height: calc(0.5vw + 0.5rem);
+}
+
+.content > p > a {
+  font-weight: 600;
+}
+
+.content > p > a > span {
+  margin-right: 1rem;
+}
+
+.content > img {
+  width: 100%;
+}
+
+/* main content */
+h1 {
+  margin-top: 2.5rem;
+  font-size: calc(1vw + 1.5rem);
+  font-weight: 600;
+}
+
+main > ul {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+main > ul > li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+main > ul > li > a {
+  font-size: calc(1vw + 0.5rem);
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+/* carousel */
+.carousel {
+  margin-top: 2.5rem;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+  width: 120%;
+  height: 260px;
+}
+
+.item-carousel {
+  min-width: 240px;
+  height: 240px;
+  border-radius: 0.5rem;
+  box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.3);
+  background-color: #ebebeb;
+}
+
+/* Sale Section */
+main > section {
+  margin-top: 10rem;
+  border-radius: 16px;
+  background: linear-gradient(279deg, #EF6988 -14.98%, #FFCEB8 101.84%);
+  display: flex;
+  justify-content: space-between;
+  aspect-ratio: 1151/325;
+}
+
+/* Countdown Part */
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  color: #fff;
+  max-width: 40%;
+}
+
+.countdown > h2 {
+  font-size: calc(0.75vw + 2rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+#days,
+#hours,
+#minutes {
+  font-size: calc(0.75vw + 0.75rem);
+  font-weight: 700;
+}
+
+.time > :last-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: calc(0.75vw + 0.5rem);
+  font-weight: 400;
+  line-height: 0.75;
+  padding-right: 1rem;
+}
+
+.time-container {
+  display: flex;
+  justify-content: start;
+}
+
+.countdown > p > a > span {
+  font-size: calc(0.75vw + 0.75rem);
+  padding-right: 1rem;
+  font-weight: 600;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Psykokwak */
+.psyko-clock {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 20%;
+}
+
+#psykokwak {
+  height: 120%;
+  align-self: flex-end;
+}
+
+/* Countdown Clock Psykokwak Animation*/
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.double-tic {
+  position: absolute;
+  height: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  right: 20vw;
+}
+
+.tic {
+  width: 0.5vw;
+  height: 2vw;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+@keyframes rotation-1 {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.17% {
+    transform: rotate(15deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.33% {
+    transform: rotate(30deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(45deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.67% {
+    transform: rotate(60deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.83% {
+    transform: rotate(75deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(90deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.17% {
+    transform: rotate(105deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.33% {
+    transform: rotate(120deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(135deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.67% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.83% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.17% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.33% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.67% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.83% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.17% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.33% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.67% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.83% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-2 {
+  0% {
+    transform: rotate(30deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.17% {
+    transform: rotate(45deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.33% {
+    transform: rotate(60deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(75deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.67% {
+    transform: rotate(90deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.83% {
+    transform: rotate(105deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(120deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.17% {
+    transform: rotate(135deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.33% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.67% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.83% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.17% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.33% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.67% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.83% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.17% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.33% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.67% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.83% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-3 {
+  0% {
+    transform: rotate(60deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.17% {
+    transform: rotate(75deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.33% {
+    transform: rotate(90deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(105deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.67% {
+    transform: rotate(120deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.83% {
+    transform: rotate(135deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.17% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.33% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.67% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.83% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.17% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.33% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.67% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.83% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.17% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.33% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.67% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.83% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-4 {
+  0% {
+    transform: rotate(90deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.17% {
+    transform: rotate(105deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.33% {
+    transform: rotate(120deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(135deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.67% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.83% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.17% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.33% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.67% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.83% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.17% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.33% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.67% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.83% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.17% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.33% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.67% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.83% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-5 {
+  0% {
+    transform: rotate(120deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(135deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-6 {
+  0% {
+    transform: rotate(150deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-7 {
+  0% {
+    transform: rotate(165deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-8 {
+  0% {
+    transform: rotate(195deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(210deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(540deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(555deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-9 {
+  0% {
+    transform: rotate(225deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(240deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(540deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(555deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(570deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(585deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-10 {
+  0% {
+    transform: rotate(255deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(270deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(540deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(555deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(570deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(585deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(600deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(615deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-11 {
+  0% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(540deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(555deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(570deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(585deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(600deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(615deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(630deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(645deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(660deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(675deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+@keyframes rotation-12 {
+  0% {
+    transform: rotate(285deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  4.1667% {
+    transform: rotate(300deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  8.3333% {
+    transform: rotate(315deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  12.5% {
+    transform: rotate(330deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  16.6667% {
+    transform: rotate(345deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  20.8333% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  25% {
+    transform: rotate(375deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  29.1667% {
+    transform: rotate(390deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  33.3333% {
+    transform: rotate(405deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  37.5% {
+    transform: rotate(420deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  41.6667% {
+    transform: rotate(435deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  45.8333% {
+    transform: rotate(450deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  50% {
+    transform: rotate(465deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  54.1667% {
+    transform: rotate(480deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  58.3333% {
+    transform: rotate(495deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  62.5% {
+    transform: rotate(510deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  66.6667% {
+    transform: rotate(525deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  70.8333% {
+    transform: rotate(540deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  75% {
+    transform: rotate(555deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  79.1667% {
+    transform: rotate(570deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  83.3333% {
+    transform: rotate(585deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  87.5% {
+    transform: rotate(600deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  91.6667% {
+    transform: rotate(615deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+  95.8333% {
+    transform: rotate(630deg);
+    animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+  }
+  100% {
+    transform: rotate(645deg);
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  }
+}
+.rotate-infinite {
+  animation: rotation-1 infinite 60s;
+}
+
+.rotate-infinite-2 {
+  animation: rotation-2 infinite 60s;
+}
+
+.rotate-infinite-3 {
+  animation: rotation-3 infinite 60s;
+}
+
+.rotate-infinite-4 {
+  animation: rotation-4 infinite 60s;
+}
+
+.rotate-infinite-5 {
+  animation: rotation-5 infinite 60s;
+}
+
+.rotate-infinite-6 {
+  animation: rotation-6 infinite 60s;
+}
+
+.rotate-infinite-7 {
+  animation: rotation-7 infinite 60s;
+}
+
+.rotate-infinite-8 {
+  animation: rotation-8 infinite 60s;
+}
+
+.rotate-infinite-9 {
+  animation: rotation-9 infinite 60s;
+}
+
+.rotate-infinite-10 {
+  animation: rotation-10 infinite 60s;
+}
+
+.rotate-infinite-11 {
+  animation: rotation-11 infinite 60s;
+}
+
+.rotate-infinite-12 {
+  animation: rotation-12 infinite 60s;
+}
+
+.rotate-infinite-13 {
+  animation: rotation-13 infinite 60s;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10rem;
+  height: 100px;
+  width: 100%;
+  background: #FD8670;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  /* NavBar - Burger Menu */
+  nav > ul > li {
+    display: none;
+  }
+  /* Text Sales One Piece */
+  #sales-one-piece {
+    display: none;
+  }
+  /* Product category */
+  main > ul > li {
+    flex-direction: column;
+  }
+  main > ul > li > svg {
+    height: 44px;
+    width: 48px;
+  }
+  /* Sale Pokemon */
+  .countdown {
+    justify-content: center;
+    margin-left: 5%;
+  }
+  .countdown > h2 {
+    display: none;
+  }
+  #days,
+  #hours,
+  #minutes {
+    font-size: calc(1vw + 0.5rem);
+  }
+  .time > :last-child {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: calc(1vw + 0.5rem);
+    line-height: 0.75;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+  .countdown > p > a {
+    display: flex;
+    align-items: center;
+    font-size: calc(1vw + 0.5rem);
+  }
+  .countdown > p > a > span {
+    font-size: calc(1vw + 0.5rem);
+    padding-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

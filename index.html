@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Weebay</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <img id="logo-weebay" src="assets/logo-weebay.png" alt="Logo Weebay">
+            <ul>
+                <li><a>Manga</a></li>
+                <li><a>Trading Cards</a></li>
+                <li><a>Video Games</a></li>
+                <li><a>Collector</a></li>
+                <li class="shopping-cart">
+                    <a>
+                        <div>1</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18C4 17.45 4.19583 16.9792 4.5875 16.5875C4.97917 16.1958 5.45 16 6 16C6.55 16 7.02083 16.1958 7.4125 16.5875C7.80417 16.9792 8 17.45 8 18C8 18.55 7.80417 19.0208 7.4125 19.4125C7.02083 19.8042 6.55 20 6 20ZM16 20C15.45 20 14.9792 19.8042 14.5875 19.4125C14.1958 19.0208 14 18.55 14 18C14 17.45 14.1958 16.9792 14.5875 16.5875C14.9792 16.1958 15.45 16 16 16C16.55 16 17.0208 16.1958 17.4125 16.5875C17.8042 16.9792 18 17.45 18 18C18 18.55 17.8042 19.0208 17.4125 19.4125C17.0208 19.8042 16.55 20 16 20ZM5.15 4L7.55 9H14.55L17.3 4H5.15ZM4.2 2H18.95C19.3333 2 19.625 2.17083 19.825 2.5125C20.025 2.85417 20.0333 3.2 19.85 3.55L16.3 9.95C16.1167 10.2833 15.8708 10.5417 15.5625 10.725C15.2542 10.9083 14.9167 11 14.55 11H7.1L6 13H18V15H6C5.25 15 4.68333 14.6708 4.3 14.0125C3.91667 13.3542 3.9 12.7 4.25 12.05L5.6 9.6L2 2H0V0H3.25L4.2 2Z" fill="#262626"/></svg>    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div id="one-piece-video-container">
+                <video autoplay muted loop id="one-piece-video-background">
+                    <source src="assets/one-piece-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="one-piece-content-overlay">
+                <div class="content">
+                    <img id="logo-one-piece" src="assets/one-piece-logo.png" alt="Logo One Piece">
+                    <p id="sales-one-piece">20% off discount on the entire One Piece collection to celebrate the release of the Netflix series.</p>
+                    <p><a href=" "><span>Join Luffy's crew</span><i class="fa-solid fa-arrow-right"></i></a></p>
+                </div>
+                <div class="content">
+                    <img src="assets/carousel-temporaire.png">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <h1>Product Category</h1>
+        <ul>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none"><mask id="mask0_360_160" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="56"><path d="M51.8112 0H0V56H51.8112V0Z" fill="white" /></mask><g mask="url(#mask0_360_160)"><path d="M50.2 11.4052L27.3706 0.343355L27.1672 0.244422L27.1578 0.257488C23.9808 -0.948378 18.3714 2.38549 17.6826 3.80976L0.287163 39.7057C-0.418437 41.1599 0.214363 42.9239 1.69836 43.6425L26.5698 55.6956C28.0557 56.4143 29.8309 55.8188 30.5346 54.3647L31.2701 52.8452C32.4237 52.933 33.5736 52.3114 34.1149 51.1932L51.5104 15.2972C52.216 13.8431 51.628 12.1015 50.1962 11.4071L50.2 11.4052Z" fill="#F8CE83" /><path d="M3.12297 39.424L2.75524 40.1837C2.30351 41.1133 2.69364 42.2333 3.62324 42.6851L27.1694 54.096C28.099 54.5477 29.219 54.1576 29.6707 53.228L30.0384 52.4683L3.12297 39.4259V39.424Z" fill="#F9E2BB" /></g></svg>
+                <a>Manga</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none"><mask id="mask0_360_135" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="56"><path d="M51.8112 0H0V56H51.8112V0Z" fill="white" /></mask><g mask="url(#mask0_360_135)"><path d="M48.515 13.0226L23.6527 0.976919C22.1683 0.257714 20.3818 0.878059 19.6626 2.3625L1.91967 38.984C1.20046 40.4684 1.82081 42.2548 3.30525 42.9741L28.1676 55.0197C29.652 55.7389 31.4384 55.1186 32.1576 53.6342L49.9006 17.0127C50.6198 15.5282 49.9994 13.7418 48.515 13.0226Z" fill="#FFCEB8" /><path d="M48.515 13.0226L23.6527 0.976919C22.1683 0.257714 20.3818 0.878059 19.6626 2.3625L1.91967 38.984C1.20046 40.4684 1.82081 42.2548 3.30525 42.9741L28.1676 55.0197C29.652 55.7389 31.4384 55.1186 32.1576 53.6342L49.9006 17.0127C50.6198 15.5282 49.9994 13.7418 48.515 13.0226Z"fill="#FFCEB8" /><path d="M43.0339 15.9878L24.7231 7.11634C23.9809 6.75673 23.0877 7.06691 22.7281 7.80913L15.8914 21.9202C15.5317 22.6624 15.8419 23.5556 16.5841 23.9152L34.8949 32.7867C35.6371 33.1463 36.5303 32.8361 36.8899 32.0939L43.7267 17.9828C44.0863 17.2406 43.7761 16.3474 43.0339 15.9878Z"fill="#FFE2D7" /><path d="M34.644 35.0124L14.9894 25.4898C14.6183 25.31 14.1717 25.4651 13.9919 25.8362C13.8121 26.2073 13.9671 26.6539 14.3382 26.8337L33.9929 36.3563C34.364 36.5361 34.8106 36.381 34.9904 36.0099C35.1702 35.6388 35.0151 35.1922 34.644 35.0124Z"fill="#FFE2D7" /><path d="M20.5404 31.4885L13.495 28.075C13.1238 27.8952 12.6772 28.0503 12.4974 28.4214C12.3176 28.7925 12.4727 29.2391 12.8438 29.4189L19.8893 32.8324C20.2604 33.0122 20.707 32.8571 20.8868 32.486C21.0666 32.1149 20.9115 31.6683 20.5404 31.4885Z"fill="#FFE2D7" /></g></svg>
+                <a>Trading Cards</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none"><mask id="mask0_360_120" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="56"><path d="M51.8112 0H0V56H51.8112V0Z" fill="white"/></mask><g mask="url(#mask0_360_120)"><path d="M49.308 17.1677L32.2038 3.82854C31.9462 3.43094 31.6568 3.04454 31.3358 2.67868C27.7966 -1.34959 22.0024 -0.505858 17.9742 3.03334C15.499 5.20614 14.2688 7.89228 14.5078 10.5728C10.2742 17.8584 6.36538 26.4675 3.66244 34.1581C1.57178 35.7933 0.464844 38.5392 0.464844 41.8264C0.464844 47.1875 3.40484 51.9531 8.76591 51.9531C9.25498 51.9531 9.73471 51.9157 10.2032 51.8467L31.5131 55.8936C34.5576 56.4723 37.5499 54.6616 38.4515 51.6955C39.3382 48.7741 37.9158 45.6475 35.1307 44.3968L25.4782 35.9949C26.9136 32.4352 28.5134 28.9464 30.2718 25.5379L43.0566 27.4717C45.8342 28.7392 49.1214 27.7461 50.7323 25.1515C52.3657 22.5176 51.7515 19.0755 49.308 17.1696V17.1677Z" fill="#EF6988"/><path d="M24.3339 25.9821C26.2359 25.9821 27.7779 24.4402 27.7779 22.5381C27.7779 20.636 26.2359 19.0941 24.3339 19.0941C22.4318 19.0941 20.8899 20.636 20.8899 22.5381C20.8899 24.4402 22.4318 25.9821 24.3339 25.9821Z" fill="#F99BB4"/><path d="M7.38084 45.3451C9.28291 45.3451 10.8248 43.8031 10.8248 41.9011C10.8248 39.999 9.28291 38.4571 7.38084 38.4571C5.47877 38.4571 3.93684 39.999 3.93684 41.9011C3.93684 43.8031 5.47877 45.3451 7.38084 45.3451Z" fill="#F99BB4"/><path d="M21.728 9.5144C22.5981 9.5144 23.3035 8.80904 23.3035 7.93893C23.3035 7.06883 22.5981 6.36346 21.728 6.36346C20.8579 6.36346 20.1525 7.06883 20.1525 7.93893C20.1525 8.80904 20.8579 9.5144 21.728 9.5144Z" fill="#F99BB4"/><path d="M27.1264 11.0208C27.9583 11.0208 28.6328 10.3464 28.6328 9.51441C28.6328 8.68245 27.9583 8.00801 27.1264 8.00801C26.2944 8.00801 25.62 8.68245 25.62 9.51441C25.62 10.3464 26.2944 11.0208 27.1264 11.0208Z" fill="#F99BB4"/><path d="M25.5379 7.71493C26.408 7.71493 27.1134 7.00957 27.1134 6.13946C27.1134 5.26936 26.408 4.564 25.5379 4.564C24.6678 4.564 23.9624 5.26936 23.9624 6.13946C23.9624 7.00957 24.6678 7.71493 25.5379 7.71493Z" fill="#F99BB4"/><path d="M23.4827 12.7419C24.3147 12.7419 24.9891 12.0674 24.9891 11.2355C24.9891 10.4035 24.3147 9.72906 23.4827 9.72906C22.6507 9.72906 21.9763 10.4035 21.9763 11.2355C21.9763 12.0674 22.6507 12.7419 23.4827 12.7419Z" fill="#F99BB4"/><path d="M20.0685 39.4837L19.501 40.8912C19.3984 41.1451 19.1146 41.2758 18.8552 41.1862L17.7277 40.7998C17.5448 40.7363 17.4104 40.5757 17.3824 40.3835L17.2648 39.5566C17.2405 39.3848 17.3096 39.2112 17.4514 39.0955L18.1608 38.5131C18.2989 38.3992 18.4874 38.3656 18.6554 38.4235L19.7568 38.8005C20.0368 38.8957 20.1805 39.2075 20.0685 39.4837Z" fill="#F99BB4"/><path d="M13.9123 36.9133L13.3187 38.3096C13.2104 38.5616 13.3187 38.8547 13.567 38.976L14.6366 39.5005C14.8102 39.5864 15.0192 39.5659 15.1742 39.4501L15.8424 38.9499C15.9824 38.8453 16.0552 38.6736 16.0366 38.4925L15.947 37.5779C15.9302 37.3987 15.82 37.2437 15.6595 37.1635L14.6142 36.6501C14.3472 36.5195 14.0262 36.6389 13.9104 36.9115L13.9123 36.9133Z" fill="#F99BB4"/><path d="M14.5787 41.7592L15.975 42.3528C16.227 42.4611 16.52 42.3528 16.6414 42.1045L17.1659 41.0349C17.2518 40.8613 17.2312 40.6523 17.1155 40.4973L16.6152 39.8291C16.5107 39.6891 16.339 39.6163 16.1579 39.6349L15.2432 39.7245C15.064 39.7413 14.9091 39.8515 14.8288 40.012L14.3155 41.0573C14.1848 41.3243 14.3043 41.6453 14.5768 41.7611L14.5787 41.7592Z" fill="#F99BB4"/><path d="M18.7002 36.3029L17.317 35.6795C17.0669 35.5675 16.772 35.6701 16.645 35.9128L16.0981 36.9712C16.0085 37.1429 16.0234 37.352 16.1373 37.5107L16.6245 38.1901C16.7253 38.332 16.8952 38.4085 17.0781 38.3936L17.9946 38.3245C18.1738 38.3115 18.3325 38.2051 18.4146 38.0464L18.9504 37.0123C19.0866 36.7491 18.9746 36.4261 18.704 36.3029H18.7002Z" fill="#F99BB4"/></g></svg>
+                <a>Video Games</a>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none"><mask id="mask0_360_144" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="56"><path d="M51.8112 0H0V56H51.8112V0Z" fill="white"/></mask><g mask="url(#mask0_360_144)"><path d="M5.17253 5.96774L13.6099 0.856803L25.0693 0.586136L43.4952 9.548L50.4485 18.7077L51.5947 28.4648L9.94187 55.4829L5.17253 5.96774Z" fill="#70B2C2"/><mask id="mask1_360_144" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="0" width="47" height="56"><path d="M5.17253 5.96774L13.6099 0.856803L25.0693 0.586136L43.4952 9.548L50.4485 18.7077L51.5947 28.4648L9.94187 55.4829L5.17253 5.96774Z" fill="white"/></mask><g mask="url(#mask1_360_144)"><path d="M21.0878 10.1024L13.0704 18.2336L37.3128 29.9805L38.7893 18.6797L21.0878 10.1024Z" fill="#B4E7EF"/><path d="M21.2483 8.71175L15.2544 0.886682L25.1496 0.662682L43.6072 9.63948L49.5973 17.5168L39.7189 17.6624L21.2483 8.71175Z" fill="#B4E7EF"/><path d="M19.9173 9.39308L12.0997 17.3992L5.23039 6.02561L13.5688 0.98748L19.9173 9.39308Z" fill="#B4E7EF"/><path d="M39.9728 19.0456L38.627 30.3669L51.7328 28.56L50.5942 18.9597L39.9728 19.0456Z" fill="#B4E7EF"/><path d="M12.4227 19.5701L36.6763 31.2947L10.052 55.5371L12.4227 19.5701Z" fill="#B4E7EF"/><path d="M11.3027 19.0008L5.54028 9.19894L9.30162 47.824L11.3027 19.0008Z" fill="#B4E7EF"/><path d="M37.9811 31.9275L16.5443 51.3352L48.7517 30.4901L37.9811 31.9275Z" fill="#B4E7EF"/></g></g></svg>
+                <a>Collector</a>
+            </li>
+        </ul>
+        <div class="carousel">
+            <div class="item-carousel"></div>
+            <div class="item-carousel"></div>
+            <div class="item-carousel"></div>
+            <div class="item-carousel"></div>
+            <div class="item-carousel"></div>
+        </div>
+
+        <section>
+            <div class="countdown">
+                <h2>Auction Sale Pokemon</h2>
+                <div class="time-container">
+                    <div class="time">
+                        <span id="days">03</span>
+                        <span>days</span>
+                    </div>
+                    <div class="time">
+                        <span id="hours">10</span>
+                        <span>hours</span>
+                    </div>
+                    <div class="time">
+                        <span id="minutes">24</span>
+                        <span>minutes</span>
+                    </div>
+                </div>
+                <p>
+                    <a>
+                        <span>Register</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </p>
+            </div>
+            
+            <div class="psyko-clock">
+                <img id="psykokwak" src="assets/psykokwak.png" alt="Psykokwak">
+                <div class="clock-container">
+                        <div class="double-tic rotate-infinite">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-2">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-3">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-4">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-5">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-6">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-7">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-8">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-9">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-10">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-11">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+                        <div class="double-tic rotate-infinite-12">
+                            <div class="tic"></div>
+                            <div class="tic"></div>
+                        </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+
+        </nav>
+    </footer>
+    <script src="https://kit.fontawesome.com/b9de2c5951.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
