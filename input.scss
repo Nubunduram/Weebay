@@ -182,16 +182,18 @@ main>ul>li>a {
 
 /* Sale Section */
 
-main>section {
+.container {
     margin-top: 10rem;
-    border-radius: 16px;
     background: linear-gradient(279deg, #EF6988 -14.98%, #FFCEB8 101.84%);
-    display: flex;
-    justify-content: space-between;
+    border-radius: 16px;
     aspect-ratio: 1151 / 325;
-}
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-/* Countdown Part */
+/* Countdown Clock */
 
 .countdown {
     display: flex;
@@ -239,94 +241,96 @@ main>section {
     flex-direction: column;
 }
 
-/* Psykokwak */
-
-.psyko-clock {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    max-width: 20%;
-}
+// Psykokwak
 
 #psykokwak {
+    position: relative;
     height: 120%;
     align-self: flex-end;
+    margin-right: 5%;
+    margin-top: -20%;
 }
 
-/* Countdown Clock Psykokwak Animation*/
-
-.clock-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.double-tic {
+// Animation & shit
+  
+  .animation-container {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    height: 40vw;
+    overflow: hidden;
+  }
+  
+  .psycho-clock {
+    position: absolute;
+    background-color: transparent;
+    right: -5vw;
+    height: 100%;
+    aspect-ratio: 1/1;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    right: 20vw;
-}
-
-.tic {
-    width: 0.5vw;
-    height: 2vw;
-    background-color: white;
-    border-radius: 1rem;
-}
-
-// Define the number of rotations and the duration for each animation
-// There is 12 elements but we start counting at 0
-$rotation-count: 11;
-$rotation-duration: 60s;
-
-// Define the percentage steps for cubic bezier changes
-// Allow the "click effect"
-$percentage-steps: 4.166666666667;
-
-// Create the animation of each 12 elements
-@for $i from 0 through $rotation-count {
-    // Calculate the starting degree for each rotation
-    // Starting each from 15deg more than the one before
-    // since every element are over each other due to the absolute position
-    $start: $i * 15;
-
-    //   Keyframes for the animation
-    @keyframes rotation-#{$i} {
-
-        // use the start to be the first deg rotation of the keyframe
-        0% {
-            transform: rotate(#{$start}deg);
-            animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
-        }
-
-        $current-step: 0;
-
-        // Loop through 24 steps (representing 100%)
-        @for $step from 1 through 24 {
-            // Calculate the percentage and the rotation degree for each step (+15deg/step)
-            $percentage: $step * $percentage-steps;
-            $step-start: $start + (360 * ($percentage / 100));
-            $rounded-step-start: round($start + ($percentage / 100) * 360);
-
-            // Create each Keyframe
-            #{$percentage + "%"} {
-                transform: rotate(#{$rounded-step-start}deg);
-                animation-timing-function: if($current-step % 2==0, cubic-bezier(0.15, 0, 0.8, 0.3), cubic-bezier(0.4, 0, 1, 1));
-            }
-
-            $current-step: $current-step + 1;
-        }
+  }
+  
+  .clock-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tic-line {
+    top: 49%;
+    right: 50%;
+    height: 2%;
+    width: 100%;
+    position: absolute;
+    transform-origin: center right;
+  }
+  
+  .tic-line:nth-child(2) {
+    transform: rotateZ(24deg)
+  }
+  
+  .tic-line:nth-child(3) {
+    transform: rotateZ(12deg)
+  }
+  
+  .tic-line:nth-child(4) {
+    transform: rotateZ(-12deg)
+  }
+  .tic-line:nth-child(5) {
+    transform: rotateZ(-24deg)
+  }
+  .tic-line:nth-child(6) {
+    transform: rotateZ(-36deg)
+  }
+  .tic-line:nth-child(7) {
+    transform: rotateZ(-48deg)
+  }
+  
+  .tic {
+    width: 7%;
+    height: 75%;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  @keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
     }
-
-    // Create Each class and put the right animation in it
-    .rotate-infinite-#{$i} {
-        animation: rotation-#{$i} infinite $rotation-duration;
+    50% {
+        transform: rotate(12deg);
+        animation-timing-function: cubic-bezier(0.15, 0, 0.8, 0.3);
+    }
+    100% {
+        transform: rotate(24deg);
+        animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
     }
 }
+
+.rotating {
+    animation: rotating 4s linear infinite;
+}
+
 
 /* FOOTER */
 
