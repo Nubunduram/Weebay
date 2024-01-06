@@ -124,9 +124,9 @@ document.addEventListener("DOMContentLoaded", function () {
         switch (item.category) {
             case "Manga":
                 return `<p>Volume ${item.volume}</p><p>Author - ${item.author}</p>`;
-            case "Trading Card":
+            case "Trading Cards":
                 return `<p>${item.version} Version</p><p>Rarity: ${item.rarity}</p>`;
-            case "Video Game":
+            case "Video Games":
                 return `<p>${item.console}</p><p>PEGI ${item.pegi}+</p>`;
             case "Collector":
                 return `<p>${item.description}</p>`;
