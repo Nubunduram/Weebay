@@ -6,7 +6,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>Weebay</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="w-80">
         <nav>
             <img id="logo-weebay" src="assets/logo-weebay.png" alt="Logo Weebay">
             <ul>
-                <li><a>Manga</a></li>
-                <li><a>Trading Cards</a></li>
-                <li><a>Video Games</a></li>
-                <li><a>Collector</a></li>
+                <li><a class="orange-link">Manga</a></li>
+                <li><a class="pink-link">Trading Cards</a></li>
+                <li><a class="purple-link">Video Games</a></li>
+                <li><a class="blue-link">Collector</a></li>
                 <li class="shopping-cart">
                     <a>
                         <div>1</div>
@@ -38,28 +38,34 @@
 
         <section>
             <div id="one-piece-video-container">
-                <video autoplay muted loop id="one-piece-video-background">
+                <video autoplay muted loop id="one-piece-video-background" class="w-100">
                     <source src="assets/one-piece-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div id="one-piece-content-overlay">
+            <div id="one-piece-content-overlay" class="w-100">
                 <div class="content">
-                    <img id="logo-one-piece" src="assets/one-piece-logo.png" alt="Logo One Piece">
+                    <img id="logo-one-piece" class="w-100" src="assets/one-piece-logo.png" alt="Logo One Piece">
                     <p id="sales-one-piece">20% off discount on the entire One Piece collection to celebrate the release
                         of the Netflix series.</p>
                     <p><a href=" "><span>Join Luffy's crew</span><i class="fa-solid fa-arrow-right"></i></a></p>
                 </div>
-                <div class="content">
-                    <img src="assets/carousel-temporaire.png">
+                <div class="content opc-container">
+                    <div class="opc opc-1"><img src="assets/op1.png" class="img-manga-op"></div>
+                    <div class="opc opc-2"><img src="assets/op2.png" class="img-manga-op"></div>
+                    <div class="opc opc-3"><img src="assets/op3.png" class="img-manga-op"></div>
                 </div>
             </div>
         </section>
     </header>
 
-    <main>
-        <h1>Product Category</h1>
-        <ul>
+    <main class="w-100">
+        <section class="w-80">
+            <h2>Product Category</h2>
+            <ul>
+            <li>
+                <a class="filter-button">All</a>
+            </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none">
                     <mask id="mask0_360_160" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
@@ -75,7 +81,7 @@
                             fill="#F9E2BB" />
                     </g>
                 </svg>
-                <a>Manga</a>
+                <a class="orange-link filter-button">Manga</a>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none">
@@ -101,7 +107,7 @@
                             fill="#FFE2D7" />
                     </g>
                 </svg>
-                <a>Trading Cards</a>
+                <a class="pink-link filter-button">Trading Cards</a>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none">
@@ -145,7 +151,7 @@
                             fill="#F99BB4" />
                     </g>
                 </svg>
-                <a>Video Games</a>
+                <a class="purple-link filter-button">Video Games</a>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="52" height="56" viewBox="0 0 52 56" fill="none">
@@ -180,20 +186,18 @@
                         </g>
                     </g>
                 </svg>
-                <a>Collector</a>
+                <a class="blue-link filter-button">Collector</a>
             </li>
-        </ul>
-        <div class="carousel">
-            <div class="item-carousel"></div>
-            <div class="item-carousel"></div>
-            <div class="item-carousel"></div>
-            <div class="item-carousel"></div>
-            <div class="item-carousel"></div>
-        </div>
-
+            </ul>
+        </section>
+        <section class="w-100">
+                <div class="carousel">
+                </div>
+        </section>
+        <div class="w-80">
         <section class="container">
             <div class="countdown">
-                <h2>Auction Sale Pokemon</h2>
+                <h3>Auction Sale Pokemon</h3>
                 <div class="time-container">
                     <div class="time">
                         <span id="days">03</span>
@@ -209,15 +213,16 @@
                     </div>
                 </div>
                 <p>
-                    <a>
+                    <a href=" ">
                         <span>Register</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </p>
             </div>
-            <div class="animation-container">
+            <div class="animation-container w-100">
                 <div class="psycho-clock">
-                    <div class="clock-container rotating">
+                    <div id="yellow-line"></div>
+                    <div class="clock-container w-100 rotating">
                         <div class="tic-line">
                             <div class="tic"></div>
                         </div>
@@ -244,9 +249,10 @@
             </div>
             <img id="psykokwak" src="assets/psykokwak.png" alt="Psykokwak">
         </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="w-100">
         <nav>
 
         </nav>
