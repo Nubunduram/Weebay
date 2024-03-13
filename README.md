@@ -1,0 +1,1 @@
+Practical project for integrating a web mockup of an e-commerce site specializing in Mangas/Games/Cards/Collectibles. The code is not clean, and the mockup was never completed, so the project was left abandoned.
